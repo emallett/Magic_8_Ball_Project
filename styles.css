@@ -1,0 +1,49 @@
+h1 {
+    color:slateblue;
+  }
+
+  p {
+    color: #ee82ee;
+  }
+
+  li {
+    list-style-type: square;
+  }
+
+
+  li.special {
+    color: orange;
+    font-weight: bold;
+  }
+  li em {
+    color: rebeccapurple;
+  }
+
+  li em {
+    color: rgb(61, 11, 110);
+}
+
+h1 + p {
+    font-size: 200%;
+}
+.outer {
+    border: 5px solid black;
+  }
+  
+  .box {
+    padding: 10px;
+    width: calc(ASK YOUR QUESTION HERE);
+    background-color: rebeccapurple;
+    color: white;
+  }
+  .positioned {
+    position: static;
+    background: rgba(255, 0, 234, 0.226);
+  }
+
+/*
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+                  url("../../media/examples/lizard.png");
+  background-image:
+  linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)),
+  url('https://mdn.mozillademos.org/files/7693/catfront.png');/*
