@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="styles.css">
 
-    <script src="Magi8ball.js"></script>
+    <script src="Magic8ball.js"></script>
 
 </head>
 <body>
@@ -19,22 +19,86 @@
     <li><em> ask 3 questions and get your magic number for the day </em></li>
   </ul>
   
-  <h1>MAGIC EIGHT BALL</h1>
+ <center> <h1>MAGIC EIGHT BALL</h1>
 <h3><p>Before you get started; meet the inspiration<span> </span> 
- <a href="https://www.youtube.com/watch?v=ND1MXF-svtQ">here </a> </p> </h3>
+ <right> <a href="https://www.youtube.com/watch?v=ND1MXF-svtQ">here </a> </p> </h3> </right>
 
-    <h2>Your Jeannie in an 8 Eight Ball</h2>
+   <h3>Your Jeannie in an 8 Eight Ball</h3></centert>
 
         <p class="positioned"> ... </p>
 
-<ul>
-    <li>Looking good</li>
-    <li>Things are Neutral Day</li>
-    <li>Blah! <em> try again Later </em></li>
+   <center> <h1>Eight Ball Game</h1></center>
+   <center> <h2>Ask 3 different question </h2></center>
+ <center></h2> Each Response Equals (+1, -1, 0) </h2></center>
+<center><h1>After three questions Your Outcome Will Be:</h1>
+<ul><H3>
+    <li>Winner ~ Looking good</li>
+    <li>Almost Winner~ It's a Neutral Kind of Day</li>
+    <li>Not Winner <em> try again Later </em></li></H3>
 </ul>
+<h2>Good luck </h2>
 
-<div class="outer box">ASK YOUR QUESTIONS HERE</div>
-<p>Get your Daily Updates to the unknown. </p>
+
+<button onclick="myFunction()">
+   ASK YOUR QUESTION HERE
+</button>
+
+<p id="randomValue"></p>
+
+<script>
+
+document.getElementById("myBtn").addEventListener("click", myFunction);
+function myFunction () {
+  document.getElementById("randomValue").innerHTML = "()";  Magic8ballResponsesText.innerHTML}
+</script>
+
+<hr>
+<script>
+    document.getElementById("myBtn").addEventListener("click", displayDate);
+    
+    function displayDate() {
+      document.getElementById("demo").innerHTML = Date();
+    }
+    </script>
+
+<hr>
+
+<div class="outer box"> 
+    <script src = "Magic8ballResponsesText.js" </script>
+</div> 
+
+
+
+<script src="Magic8ball.js"></script></center>
+
+
+<p>Get your Daily Updates to the unknown </p>
+
+
+############################
+
+<hr>
+<body>
+
+<p>A function can access variables defined inside the function:</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var a = 5;
+  document.getElementById("demo").innerHTML = a * a;
+} 
+
+</script>
 
 </body>
+
+})
+
+
+
 </html>
+
