@@ -26,6 +26,8 @@ name.addEventListener("submit", (e) => {
   })
 
   
+
+  
   // You want to put all of the responses in an array.
 // and then you want to randomly select a random element inside of an array
 

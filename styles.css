@@ -1,3 +1,7 @@
+body {
+  background-image: url("images/Clear_Crystal_ball.jpg");
+}
+
 h1 {
     color:slateblue;
   }
@@ -36,14 +40,5 @@ h1 + p {
     background-color: rebeccapurple;
     color: white;
   }
-  .positioned {
-    position: static;
-    background: rgba(255, 0, 234, 0.226);
-  }
-
-
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
-                  url(". body {
-                    background-image: "images/Clear_Crystal_ball.jpg"
-                }");
  
+
