@@ -47,4 +47,4 @@ var a = 5;
 
 if 2< = show Winner ~ Looking good
 if >2 = show Almost Winner~ It's a Neutral Kind of Day
-if >1 = show Not Winner try again Later
+if >1 = show Not Winner try again 
