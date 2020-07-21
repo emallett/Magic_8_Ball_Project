@@ -1,5 +1,9 @@
 body {
-  background-image: url("images/Clear_Crystal_ball.jpg");
+ 
+
+ font-style: oblique;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-stretch: expanded;
 }
 
 h1 {
@@ -7,7 +11,7 @@ h1 {
   }
 
   p {
-    color: #ee82ee;
+    color:darkorchid;
   }
 
   li {
@@ -16,7 +20,7 @@ h1 {
 
 
   li.special {
-    color: orange;
+    color: hotpink;
     font-weight: bold;
   }
   li em {
@@ -41,10 +45,4 @@ h1 + p {
     color: white;
   }
  
-  <src 
   
-  
-  
-  
-  https://github.com/emallett/Magic_8_Ball_Project/blob/master/images/Screen%20Shot%202020-07-14%20at%206.42.37%20PM.png
-

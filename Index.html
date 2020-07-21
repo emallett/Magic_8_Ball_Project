@@ -1,47 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
     <title>Magic Eight Ball</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
- 
-  <ul>
+    
+    <div class = "Box">
+    </div> 
+<body style="background-color:floralwhite">
+  <bg-image#>
+   <ul>
     <li>8 Ball Magic</li>
     <li class="special">a fun game to start your day </li>
     <li><em> ask 3 questions and get your magic number for the day </em></li>
-  </ul>
-  <h1>MAGIC EIGHT BALL</h1>
+  </ul> 
+<center>
+
+  <img src = "https://mcdn.wallpapersafari.com/medium/56/43/eLACoc.jpg" alt="Image" height="140" width="200"/>
+  <h1 style= "font-size: 40px;">MAGIC EIGHT BALL</h1>
 <h3><p>Before you get started; meet the inspiration<span> </span>
  <a href="https://www.youtube.com/watch?v=ND1MXF-svtQ">here </a> </p> </h3>
     <h2>Your Jeannie in an 8 Eight Ball</h2>
-        <p class="positioned"> ... </p>
+    
 <ul>
-    <li>Looking good</li>
-    <li>Things are Neutral Day</li>
-    <li>Blah! <em> try again Later </em></li>
+    <li>Looking<bold> GOOD</bold></li>
+    <li>Things are <bold> NEUTRAL</bold> Day</li>
+    <li>Nope <em> try again <bold>LATER</bold> </em></li>
+  
 </ul>
 
- 
-  
-  <script> language=”JavaScript”, src=”Magic8ball2.js” </script>
+<img src = "https://i.pinimg.com/originals/b6/d5/f0/b6d5f0a1c459b2baf78b5ae057a74f50.jpg" Vspace=40 alt='Jeannie'/>
 
+  <p><audio src="/https://www.soundboard.com/sb/I_Dream_of_Jeannie#" controls>	
+    themeSong</p>
+    </audio>
+
+  <h3>
     <p id="demo" onclick="myFunction()"> <bold>ASK YOUR QUESTIONS HERE</bold> </p>
+    <input type="text" id="question_input"></input>
+    <button onClick="get8BallResponse()">Ask Genie your Question</button> </h3>
 
-    <script>
-     function myFunction() {
-        document.getElementById("demo").innerHTML = "<a href= randomValue>" 
-          Magic8ballResponsesText.innerHTML= randomValue
+    <h1>
+    <p>Genie says...<p>
 
-          <hr>
-//let Magic8ball = document.getElementById('The_Magic_8_Ball') 
-//Magic8ball.innerHTML=inputName.value
-      }
+    <div id="genie_response"></div></h1>
+
+<script>
+var genieResponses = ["You may rely on it", "As I see it", "Yes", "Signs point to yes", "Reply hazy, try again",
+"Ask again later", "Better not tell you now", "Cannot predict now", "Concentrate and ask again", 
+"Don't count on it", "My reply is no", "My sources say no", "Outlook not so good", "Very doubtful"];
+
+function get8BallResponse() {
+    var response_index = Math.floor(Math.random() * 5);
+    var response_text = genieResponses[response_index];
+    document.getElementById("genie_response").innerHTML = response_text;
+}
+
+
 </script> 
+
+
+  <p>Get your Daily Updates to the unknown</p>
+</center>
 </body>
-<p><italics>Get your Daily Updates to the unknown</italics></p>
 
 </html>
 
