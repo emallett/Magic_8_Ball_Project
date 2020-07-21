@@ -31,7 +31,7 @@ name.addEventListener("submit", (e) => {
 
   let Magic8ball = document.getElementById('The_Magic_8_Ball') //
   Magic8ball.innerHTML=inputName.value
- })
+ 
 
 
 
