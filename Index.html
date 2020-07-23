@@ -43,24 +43,58 @@
     <input type="text" id="question_input"></input>
     <button onClick="get8BallResponse()">Ask Genie your Question</button> </h3>
 
-    <h1>
+   <h1>
     <p>Genie says...<p>
 
-    <div id="genie_response"></div></h1>
+    <div id="genie_response"></div></h1
+
+
+
+  
+      <script>
+     var genieResponses = ["You may rely on it", "As I see it", "Yes", "Signs point to yes", "Reply hazy, try again",
+     "Ask again later", "Better not tell you now", "Cannot predict now", "Concentrate and ask again", 
+     "Don't count on it", "My reply is no", "My sources say no", "Outlook not so good", "Very doubtful"];
+     
+     function get8BallResponse() {
+         var response_index = Math.floor(Math.random() * 5);
+         var response_text = genieResponses[response_index];
+         document.getElementById("genie_response").innerHTML = response_text;
+     }
+     </script> */
+
+
+     <hr>
 
 <script>
-var genieResponses = ["You may rely on it", "As I see it", "Yes", "Signs point to yes", "Reply hazy, try again",
-"Ask again later", "Better not tell you now", "Cannot predict now", "Concentrate and ask again", 
-"Don't count on it", "My reply is no", "My sources say no", "Outlook not so good", "Very doubtful"];
-
-function get8BallResponse() {
-    var response_index = Math.floor(Math.random() * 5);
-    var response_text = genieResponses[response_index];
-    document.getElementById("genie_response").innerHTML = response_text;
+  var genieResponses = ['You may rely on it', 'As I see it', 'Yes', 'Signs point to yes', 'Reply hazy,
+   try again', 'Ask again later', 
+  'Better not tell you now', 'Cannot predict now', 'Concentrate and ask again', 'Do not count on it', 
+  'My reply is no', 
+  'My sources say no', 'Outlook not so good', 'Very doubtful']
+  const plusOne = [' You may rely on it', 'As I see it', 'Yes', 'Signs point to yes']
+  const minusOne = [ 'Do not count on it', 'My reply is no', 'My sources say no', 'Outlook not so good', 
+  'Very doubtful']
+  
+  let score = 0;
+  function get8BallResponse(){
+      var response_index = Math.floor(Math.random () * genieResponses.length)
+      var response_text = genieResponses[response_index];
+      document.getElementById("genie_response").innerHTML = response_text;
+      
+      if (plusOne.includes(response_text)) {
+           score +=1;
+           if (score > 2) {
+              alert ('You win!');
+      } else if (minusOne.includes(response_text)) {
+            score - =1;
+            if (score < -1) 
+                alert ('Sorry, you lose!')
+      }
+  }
 }
-
-
-</script> 
+}
+  </script>
 
 
   <p>Get your Daily Updates to the unknown</p>

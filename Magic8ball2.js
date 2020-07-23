@@ -31,20 +31,23 @@ name.addEventListener("submit", (e) => {
   Magic8ball.innerHTML=inputName.value
 
   // You want to put all of the responses in an array.
-// and then you want to randomly select a random element inside of an array
+// and then you want to randomly select a random element inside of an array -complete
 
-//look into how to select a random element from an array
+//look into how to select a random element from an array -complete 
 
 //elements = value
 // const Magic8ballResponses= "You may rely on it" = +1, "As I see it"= +1, "Yes", "Signs point to yes"= +1, "Reply hazy" = null, "try again" = null,
 "Ask again later" = null, "Better not tell you now" = null, "Cannot predict now" = null, "Concentrate and ask again"= null, 
-"Don't count on it" = -1 , "My reply is no" =-1, "My sources say no" -1, "Outlook not so good" -1, "Very doubtful" -1,];
+"Do not count on it" = -1 , "My reply is no" =-1, "My sources say no" -1, "Outlook not so good" -1, "Very doubtful" -1,];
 
 //Final 
 //
 var a = 5;
-  document.getElementById("demo").innerHTML = a * a;
+document.getElementById("demo").innerHTML = a * a;
 
 if 2< = show Winner ~ Looking good
 if >2 = show Almost Winner~ It's a Neutral Kind of Day
 if >1 = show Not Winner try again 
+
+
+
