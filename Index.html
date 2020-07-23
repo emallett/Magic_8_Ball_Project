@@ -4,96 +4,125 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
     <title>Magic Eight Ball</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    
-    <div class = "Box">
-    </div> 
+
+</head>
 <body style="background-color:floralwhite">
   <bg-image#>
    <ul>
     <li>8 Ball Magic</li>
     <li class="special">a fun game to start your day </li>
     <li><em> ask 3 questions and get your magic number for the day </em></li>
-  </ul> 
+  </ul>
 <center>
 
   <img src = "https://mcdn.wallpapersafari.com/medium/56/43/eLACoc.jpg" alt="Image" height="140" width="200"/>
   <h1 style= "font-size: 40px;">MAGIC EIGHT BALL</h1>
-<h3><p>Before you get started; meet the inspiration<span> </span>
- <a href="https://www.youtube.com/watch?v=ND1MXF-svtQ">here </a> </p> </h3>
+  <p><h3>Before you get started; meet the inspiration</h3>
+ <a href="https://www.youtube.com/watch?v=ND1MXF-svtQ">here </a> </p>
     <h2>Your Jeannie in an 8 Eight Ball</h2>
-    
+
 <ul>
-    <li>Looking<bold> GOOD</bold></li>
-    <li>Things are <bold> NEUTRAL</bold> Day</li>
-    <li>Nope <em> try again <bold>LATER</bold> </em></li>
-  
+    <li>Looking<strong> GOOD</strong></li>
+    <li>Things are <strong> NEUTRAL</strong> Day</li>
+    <li>Nope <em> try again <strong>LATER</strong> </em></li>
+
 </ul>
 
 <img src = "https://i.pinimg.com/originals/b6/d5/f0/b6d5f0a1c459b2baf78b5ae057a74f50.jpg" Vspace=40 alt='Jeannie'/>
 
-  <p><audio src="/https://www.soundboard.com/sb/I_Dream_of_Jeannie#" controls>	
+  <p><audio src="https://www.soundboard.com/sb/I_Dream_of_Jeannie#" controls>
     themeSong</p>
     </audio>
 
   <h3>
-    <p id="demo" onclick="myFunction()"> <bold>ASK YOUR QUESTIONS HERE</bold> </p>
+    <p id="demo" onclick="myFunction()"> <strong>ASK YOUR QUESTIONS HERE</strong> </p>
     <input type="text" id="question_input"></input>
     <button onClick="get8BallResponse()">Ask Genie your Question</button> </h3>
 
-   <h1>
-    <p>Genie says...<p>
 
-    <div id="genie_response"></div></h1
+    <p><h1>Genie says...</h1>
+
+    <div id="genie_response"></div>
+    </p>
 
 
 
-  
-      <script>
-     var genieResponses = ["You may rely on it", "As I see it", "Yes", "Signs point to yes", "Reply hazy, try again",
-     "Ask again later", "Better not tell you now", "Cannot predict now", "Concentrate and ask again", 
-     "Don't count on it", "My reply is no", "My sources say no", "Outlook not so good", "Very doubtful"];
-     
+    <script type="text/javascript">/*
+     var genieResponses = [
+        "You may rely on it",
+        "As I see it", "Yes",
+        "Signs point to yes",
+        "Reply hazy, try again",
+        "Ask again later",
+        "Better not tell you now",
+        "Cannot predict now",
+        "Concentrate and ask again",
+        "Don't count on it",
+        "My reply is no",
+        "My sources say no",
+        "Outlook not so good",
+        "Very doubtful"
+     ];
+
      function get8BallResponse() {
          var response_index = Math.floor(Math.random() * 5);
          var response_text = genieResponses[response_index];
          document.getElementById("genie_response").innerHTML = response_text;
-     }
-     </script> */
+     } */
+     </script>
 
 
      <hr>
 
-<script>
-  var genieResponses = ['You may rely on it', 'As I see it', 'Yes', 'Signs point to yes', 'Reply hazy,
-   try again', 'Ask again later', 
-  'Better not tell you now', 'Cannot predict now', 'Concentrate and ask again', 'Do not count on it', 
-  'My reply is no', 
-  'My sources say no', 'Outlook not so good', 'Very doubtful']
-  const plusOne = [' You may rely on it', 'As I see it', 'Yes', 'Signs point to yes']
-  const minusOne = [ 'Do not count on it', 'My reply is no', 'My sources say no', 'Outlook not so good', 
-  'Very doubtful']
-  
+<script type="text/javascript">
+  var genieResponses = [
+    'You may rely on it',
+    'As I see it', 'Yes',
+    'Signs point to yes',
+    'Reply hazy',
+    'try again',
+    'Ask again later',
+    'Better not tell you now',
+    'Cannot predict now',
+    'Concentrate and ask again',
+    'Do not count on it',
+    'My reply is no',
+    'My sources say no',
+    'Outlook not so good',
+    'Very doubtful'
+  ];
+  const plusOne = [' You may rely on it', 'As I see it', 'Yes', 'Signs point to yes'];
+  const minusOne = [ 'Do not count on it', 'My reply is no', 'My sources say no', 'Outlook not so good',
+  'Very doubtful'];
+
   let score = 0;
-  function get8BallResponse(){
-      var response_index = Math.floor(Math.random () * genieResponses.length)
+  function get8BallResponse()
+  {
+      var response_index = Math.floor(Math.random () * genieResponses.length);
       var response_text = genieResponses[response_index];
       document.getElementById("genie_response").innerHTML = response_text;
-      
-      if (plusOne.includes(response_text)) {
+
+      if (plusOne.includes(response_text))
+      {
            score +=1;
-           if (score > 2) {
+           if (score > 2)
+           {
               alert ('You win!');
-      } else if (minusOne.includes(response_text)) {
-            score - =1;
-            if (score < -1) 
-                alert ('Sorry, you lose!')
+            }
+      } else if (minusOne.includes(response_text))
+      {
+            score -=1;
+            if (score < -1)
+            {
+                alert ('Sorry, you lose!');
+            }
       }
   }
-}
-}
+
   </script>
 
 
@@ -102,4 +131,3 @@
 </body>
 
 </html>
-

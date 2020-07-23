@@ -45,4 +45,9 @@ h1 + p {
     color: white;
   }
  
+  #genie_response {
+    font-size:2em;
+    font-weight: bold;
+ 
+  }
   
